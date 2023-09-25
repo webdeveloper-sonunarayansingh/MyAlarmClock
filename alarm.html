@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alarm Clock</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="alarm-clock">
+        <h1>Sonu's Snooze-Buster</h1>
+
+        <div>
+            <h2>Set the Alarm! Unclock the Magic!!!</h2>
+            <div id="clock"></div>
+        </div>
+
+        <div>
+            <h2>Set Alarm</h2>
+            <label for="hr">Hour:</label>
+            <input type="number" id="hr" min="1" max="12" placeholder="1-12" required>
+            <label for="min">Minute:</label>
+            <input type="number" id="min" min="0" max="59" placeholder="0-59" required>
+            <label for="sec">Second:</label>
+            <input type="number" id="sec" min="0" max="59" placeholder="0-59" required>
+
+            <select id="ampm">
+                <option value="AM">AM</option>
+                <option value="PM">PM</option>
+            </select>
+            <button onclick="setAlarm()">Set Alarm</button>
+        </div>
+
+        <div>
+            <h2>Alarms List</h2>
+            <ul id="alarm-list" class="alarm-list"></ul>
+        </div>
+
+
+    </div>
+
+
+
+
+
+
+
+
+
+    <script src="script.js"></script>
+</body>
+
+</html>

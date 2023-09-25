@@ -1,0 +1,67 @@
+.body  {
+    font-family: Arial, sans-serif;
+    text-align: center;
+}
+
+.alarm-clock {
+    margin: 50px auto;
+    padding: 20px;
+    width: 300px;
+    background-color: transparent;
+    border: 2px solid black;
+    border-radius: 50px;
+}
+
+h1 {
+    font-size: 24px;
+}
+
+.time {
+    font-size: 36px;
+    margin: 20px 0;
+    align-items: center;
+}
+
+.controls {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+label {
+    font-size: 18px;
+    margin-right: 10px;
+}
+
+input[type="time"] {
+    font-size: 12px;
+    padding: 3px;
+}
+
+button {
+    /* font-size: 12px; */
+    padding: 5px 10px;
+    margin-left: 10px;
+    cursor: pointer;
+    color: wheat;
+    background-color: tomato;
+    /* font-weight: 700; */
+    border-radius: 15px;
+    border-color: aliceblue;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.alarms{
+    text-align: center;
+    font-family: 'Courier New', Courier, monospace;
+    
+}
+
+#ampm {
+    border-radius: 15px;
+    background-color: tomato;
+    border-color: aliceblue;
+    color: wheat;
+    font-family: 'Courier New', Courier, monospace;
+    padding: 5px 10px;
+}
