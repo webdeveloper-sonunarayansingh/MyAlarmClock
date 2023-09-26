@@ -3,66 +3,54 @@
 @tailwind utilities;
 
 
-
-.alarm-clock {
-    margin: 50px auto;
-    padding: 20px;
-    width: 300px;
-    background-color: transparent;
-    border: 2px solid black;
-    border-radius: 50px;
+/* CSS */
+.btn-del {
+    padding: 0.3rem 1rem; /* Equivalent to px-4 py-2 */
+    background-color: #3490dc; /* Equivalent to bg-blue-500 */
+    color: #fff; /* Equivalent to text-white */
+    border-radius: 9999px; /* Equivalent to rounded-full */
+    text-decoration: none; /* Equivalent to focus:outline-none */
+    transition: background-color 0.2s ease-in-out; /* Equivalent to hover:bg-blue-600 */
+    border: 2px solid #3490dc; /* Equivalent to focus:ring-2 */
+    margin-left: 15px;
+    margin-bottom: 10px;
 }
 
-h1 {
-    font-size: 24px;
+.btn-del:hover {
+    background-color: #2779bd; /* Equivalent to hover:bg-blue-600 */
 }
 
-.time {
-    font-size: 36px;
-    margin: 20px 0;
-    align-items: center;
+.btn-del:focus {
+    outline: none; /* Equivalent to focus:outline-none */
+    border: 2px solid #3490dc; /* Equivalent to focus:ring-2 */
+    box-shadow: 0 0 0 3px rgba(52, 144, 220, 0.5); /* Equivalent to focus:ring-blue-500 focus:ring-opacity-50 */
 }
 
-.controls {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+/* CSS */
+.btn-del {
+    padding: 0.3rem 1rem; /* Equivalent to px-4 py-2 */
+    background-color: #3490dc; /* Equivalent to bg-blue-500 */
+    color: #fff; /* Equivalent to text-white */
+    border-radius: 9999px; /* Equivalent to rounded-full */
+    text-decoration: none; /* Equivalent to focus:outline-none */
+    transition: background-color 0.2s ease-in-out; /* Equivalent to hover:bg-blue-600 */
+    border: 2px solid #3490dc; /* Equivalent to focus:ring-2 */
+    margin-left: 15px;
+    margin-bottom: 10px;
 }
 
-label {
-    font-size: 18px;
-    margin-right: 10px;
+.btn-del:hover {
+    background-color: #2779bd; /* Equivalent to hover:bg-blue-600 */
 }
 
-input[type="time"] {
-    font-size: 12px;
-    padding: 3px;
+.btn-del:focus {
+    outline: none; /* Equivalent to focus:outline-none */
+    border: 2px solid #3490dc; /* Equivalent to focus:ring-2 */
+    box-shadow: 0 0 0 3px rgba(52, 144, 220, 0.5); /* Equivalent to focus:ring-blue-500 focus:ring-opacity-50 */
 }
 
-button {
-    /* font-size: 12px; */
-    padding: 5px 10px;
-    margin-left: 10px;
-    cursor: pointer;
-    color: wheat;
-    background-color: tomato;
-    /* font-weight: 700; */
-    border-radius: 15px;
-    border-color: aliceblue;
-    font-family: 'Courier New', Courier, monospace;
-}
-
-.alarms{
-    text-align: center;
-    font-family: 'Courier New', Courier, monospace;
-    
-}
-
-#ampm {
-    border-radius: 15px;
-    background-color: tomato;
-    border-color: aliceblue;
-    color: wheat;
-    font-family: 'Courier New', Courier, monospace;
-    padding: 5px 10px;
-}

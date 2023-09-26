@@ -24,6 +24,7 @@ function setAlarm() {
 
     const deleteButton = document.createElement('button');
     deleteButton.textContent = 'Delete';
+    deleteButton.className = 'btn-del';
     deleteButton.onclick = function () {
         listItem.remove();
     };
@@ -43,6 +44,9 @@ function setAlarm() {
         }, timeDifference);
     }
 }
+
+const tooltipTriggerList = document.querySelectorAll('[data-bs-toggle="tooltip"]');
+const tooltipList = [...tooltipTriggerList].map(tooltipTriggerEl => new bootstrap.Tooltip(tooltipTriggerEl));
 
 
 // Update the clock every second

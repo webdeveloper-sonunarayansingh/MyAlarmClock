@@ -1,6 +1,45 @@
-/*
-! tailwindcss v3.3.3 | MIT License | https://tailwindcss.com
-*/
+@tailwind base;
+
+@tailwind components;
+
+@tailwind utilities;
+
+/* CSS */
+
+.btn-del {
+  padding: 0.3rem 1rem;
+  /* Equivalent to px-4 py-2 */
+  background-color: #3490dc;
+  /* Equivalent to bg-blue-500 */
+  color: #fff;
+  /* Equivalent to text-white */
+  border-radius: 9999px;
+  /* Equivalent to rounded-full */
+  text-decoration: none;
+  /* Equivalent to focus:outline-none */
+  transition: background-color 0.2s ease-in-out;
+  /* Equivalent to hover:bg-blue-600 */
+  border: 2px solid #3490dc;
+  /* Equivalent to focus:ring-2 */
+  margin-left: 15px;
+  margin-bottom: 10px;
+}
+
+.btn-del:hover {
+  background-color: #2779bd;
+  /* Equivalent to hover:bg-blue-600 */
+}
+
+.btn-del:focus {
+  outline: none;
+  /* Equivalent to focus:outline-none */
+  border: 2px solid #3490dc;
+  /* Equivalent to focus:ring-2 */
+  box-shadow: 0 0 0 3px rgba(52, 144, 220, 0.5);
+  /* Equivalent to focus:ring-blue-500 focus:ring-opacity-50 */
+}
+
+/* ! tailwindcss v3.3.3 | MIT License | https://tailwindcss.com */
 
 /*
 1. Prevent padding and border from affecting element width. (https://github.com/mozdevs/cssremedy/issues/4)
@@ -434,7 +473,7 @@ video {
   display: none;
 }
 
-*, ::before, ::after {
+*, ::before, ::after{
   --tw-border-spacing-x: 0;
   --tw-border-spacing-y: 0;
   --tw-translate-x: 0;
@@ -484,7 +523,7 @@ video {
   --tw-backdrop-sepia:  ;
 }
 
-::backdrop {
+::backdrop{
   --tw-border-spacing-x: 0;
   --tw-border-spacing-y: 0;
   --tw-translate-x: 0;
@@ -534,77 +573,209 @@ video {
   --tw-backdrop-sepia:  ;
 }
 
-.flex {
+.mb-8{
+  margin-bottom: 2rem;
+}
+
+.flex{
   display: flex;
 }
 
-.underline {
-  text-decoration-line: underline;
+.table{
+  display: table;
 }
 
-.body  {
-  font-family: Arial, sans-serif;
-  text-align: center;
+.min-w-full{
+  min-width: 100%;
 }
 
-.alarm-clock {
-  margin: 50px auto;
-  padding: 20px;
-  width: 300px;
-  background-color: transparent;
-  border: 2px solid black;
-  border-radius: 50px;
+.caption-top{
+  caption-side: top;
 }
 
-h1 {
-  font-size: 24px;
+.border-separate{
+  border-collapse: separate;
 }
 
-.time {
-  font-size: 36px;
-  margin: 20px 0;
+.flex-col{
+  flex-direction: column;
+}
+
+.items-center{
   align-items: center;
 }
 
-.controls {
-  display: flex;
+.justify-center{
   justify-content: center;
-  align-items: center;
 }
 
-label {
-  font-size: 18px;
-  margin-right: 10px;
+.rounded-full{
+  border-radius: 9999px;
 }
 
-input[type="time"] {
-  font-size: 12px;
-  padding: 3px;
+.border{
+  border-width: 1px;
 }
 
-button {
-  /* font-size: 12px; */
-  padding: 5px 10px;
-  margin-left: 10px;
-  cursor: pointer;
-  color: wheat;
-  background-color: tomato;
-  /* font-weight: 700; */
-  border-radius: 15px;
-  border-color: aliceblue;
-  font-family: 'Courier New', Courier, monospace;
+.border-8{
+  border-width: 8px;
 }
 
-.alarms{
+.border-purple-200{
+  --tw-border-opacity: 1;
+  border-color: rgb(233 213 255 / var(--tw-border-opacity));
+}
+
+.border-slate-300{
+  --tw-border-opacity: 1;
+  border-color: rgb(203 213 225 / var(--tw-border-opacity));
+}
+
+.border-slate-400{
+  --tw-border-opacity: 1;
+  border-color: rgb(148 163 184 / var(--tw-border-opacity));
+}
+
+.border-teal-400{
+  --tw-border-opacity: 1;
+  border-color: rgb(45 212 191 / var(--tw-border-opacity));
+}
+
+.p-2{
+  padding: 0.5rem;
+}
+
+.p-3{
+  padding: 0.75rem;
+}
+
+.px-4{
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+.py-1{
+  padding-top: 0.25rem;
+  padding-bottom: 0.25rem;
+}
+
+.py-6{
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
+}
+
+.pb-4{
+  padding-bottom: 1rem;
+}
+
+.pt-4{
+  padding-top: 1rem;
+}
+
+.text-center{
   text-align: center;
-  font-family: 'Courier New', Courier, monospace;
 }
 
-#ampm {
-  border-radius: 15px;
-  background-color: tomato;
-  border-color: aliceblue;
-  color: wheat;
-  font-family: 'Courier New', Courier, monospace;
-  padding: 5px 10px;
+.text-2xl{
+  font-size: 1.5rem;
+  line-height: 2rem;
 }
+
+.text-4xl{
+  font-size: 2.25rem;
+  line-height: 2.5rem;
+}
+
+.text-sm{
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+}
+
+.text-xl{
+  font-size: 1.25rem;
+  line-height: 1.75rem;
+}
+
+.font-semibold{
+  font-weight: 600;
+}
+
+.text-blue-600{
+  --tw-text-opacity: 1;
+  color: rgb(37 99 235 / var(--tw-text-opacity));
+}
+
+.text-purple-600{
+  --tw-text-opacity: 1;
+  color: rgb(147 51 234 / var(--tw-text-opacity));
+}
+
+/* CSS */
+
+.btn-del {
+  padding: 0.3rem 1rem;
+  /* Equivalent to px-4 py-2 */
+  background-color: #3490dc;
+  /* Equivalent to bg-blue-500 */
+  color: #fff;
+  /* Equivalent to text-white */
+  border-radius: 9999px;
+  /* Equivalent to rounded-full */
+  text-decoration: none;
+  /* Equivalent to focus:outline-none */
+  transition: background-color 0.2s ease-in-out;
+  /* Equivalent to hover:bg-blue-600 */
+  border: 2px solid #3490dc;
+  /* Equivalent to focus:ring-2 */
+  margin-left: 15px;
+  margin-bottom: 10px;
+}
+
+.btn-del:hover {
+  background-color: #2779bd;
+  /* Equivalent to hover:bg-blue-600 */
+}
+
+.btn-del:focus {
+  outline: none;
+  /* Equivalent to focus:outline-none */
+  border: 2px solid #3490dc;
+  /* Equivalent to focus:ring-2 */
+  box-shadow: 0 0 0 3px rgba(52, 144, 220, 0.5);
+  /* Equivalent to focus:ring-blue-500 focus:ring-opacity-50 */
+}
+
+.hover\:border-transparent:hover{
+  border-color: transparent;
+}
+
+.hover\:bg-purple-600:hover{
+  --tw-bg-opacity: 1;
+  background-color: rgb(147 51 234 / var(--tw-bg-opacity));
+}
+
+.hover\:text-white:hover{
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity));
+}
+
+.focus\:outline-none:focus{
+  outline: 2px solid transparent;
+  outline-offset: 2px;
+}
+
+.focus\:ring-2:focus{
+  --tw-ring-offset-shadow: var(--tw-ring-inset) 0 0 0 var(--tw-ring-offset-width) var(--tw-ring-offset-color);
+  --tw-ring-shadow: var(--tw-ring-inset) 0 0 0 calc(2px + var(--tw-ring-offset-width)) var(--tw-ring-color);
+  box-shadow: var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow, 0 0 #0000);
+}
+
+.focus\:ring-purple-600:focus{
+  --tw-ring-opacity: 1;
+  --tw-ring-color: rgb(147 51 234 / var(--tw-ring-opacity));
+}
+
+.focus\:ring-offset-2:focus{
+  --tw-ring-offset-width: 2px;
+}
+
